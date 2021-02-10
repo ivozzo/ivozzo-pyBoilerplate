@@ -25,3 +25,17 @@ logger.info("message")
 2021-02-10 08:44:44,086|[MainThread  ]|[INFO ]| message
 ```
 
+### MongoDatabase class
+
+If you need a Mongo client with some basic functionalities extends this class.
+
+```python
+from boilerplate.mongodatabase import MongoDatabase
+
+class MyMongoClient(MongoDatabase):
+    def __init__(self, host, user, password, database):
+        self.database = super().__init__(host=host, user=user, password=password, database=database)
+        
+    def [extensions]
+
+```
